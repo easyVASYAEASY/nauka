@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое портфолио</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div id="password-form">
+    <h2>Введите пароль для доступа к содержимому:</h2> <input type="password" id="password-input"> <button
+        onclick="checkPassword()">Войти</button>
+</div>
+<div id="content" style="display: none;">
+    <header>
+        <h1>Мое портфолио</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>Обо мне</h2>
+        <p>Здесь вы можете узнать немного о моем опыте и навыках.</p>
+    </section>
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+        <div class="portfolio-item">
+        <section id="project1">
+            <h2>Проект 1</h2>
+            <div class="slider">
+                <img src="img1/2024-05-23_18-32-51.png" alt="html">
+                <img src="img1/2024-05-23_18-32-56.png" alt="js1">
+                <img src="img1/2024-05-23_18-32-58.png" alt="js2">
+                <img src="img1/2024-05-23_18-32-59.png" alt="js3">
+                <img src="img1/2024-05-23_18-33-00.png" alt="css">
+                <button class="prev">❮</button> <button class="next">❯</button>
+            </div>
+        </section>
+        <div class="portfolio-item">
+            <section id="project2">
+                <h2>Проект 2</h2>
+                <div class="slider2">
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_24_30.png" alt="html">
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_26_07.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_26_20.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_31_29.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_32_10.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_32_27.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_33_48.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_34_17.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_34_25.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_34_34.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_35_11.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_47_10.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_47_23.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_47_37.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_50_47.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_50_57.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_51_05.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_51_56.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_54_06.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_55_46.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_55_55.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_58_20.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_00_58_37.png" >
+                    <img src="debian/VirtualBox_debian_11_05_2024_01_00_30.png" >
+                    <button class="prev">❮</button> <button class="next">❯</button>
+                </div>
+            </section>
+        </div>
+        <div class="portfolio-item">
+            <section id="project3">
+                <h2>Проект 3</h2>
+                <div class="slider3">
+                    <img src="пз 4.7/VirtualBox_debian_13_05_2024_18_57_03.png" alt="html">
+                    <img src="пз 4.7/VirtualBox_debian_13_05_2024_19_04_23.png" >
+                    <img src="пз 4.7/VirtualBox_debian_13_05_2024_19_13_05.png" >
+                    <img src="пз 4.7/VirtualBox_debian_13_05_2024_19_13_53.png" >
+                    <img src="пз 4.7/VirtualBox_debian_13_05_2024_19_15_03.png" >
+                    <img src="пз 4.7/VirtualBox_debian_13_05_2024_19_17_34.png" >
+                    <img src="пз 4.7/VirtualBox_debian_13_05_2024_19_21_13.png" >
+                    <button class="prev">❮</button> <button class="next">❯</button>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Контакты</h2>
+        <button id="openModalButton">Открыть модальное окно</button>
+        <div id="modal" class="modal">
+            <div class="modal-content"> <span class="close">&times;</span>
+                <h2>Форма обратной связи</h2>
+                <form> <label for="name">Имя:</label> <input type="text" id="name" name="name"> <label
+                        for="email">Email:</label> <input type="email" id="email" name="email"> <label
+                        for="message">Сообщение:</label> <textarea id="message" name="message"></textarea> <button
+                        type="submit">Отправить</button> </form>
+            </div>
+        </div>
+        <p>Свяжитесь со мной по электронной почте: v4s.y4@yandex.ru</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Мое портфолио</p>
+    </footer>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+<script src="script3.js"></script>
+<script src="script4.js"></script>
+<script src="script5.js"></script>
+</div>
+</body>
+
+</html>
